@@ -81,7 +81,7 @@ namespace LinqIntro2
                      CustomerName = client.Name,
                      BankName = bank.Name
                  }
-                 select reportItem).OrderBy(n => n.CustomerName.Split(' ')[1][0]).ToList();
+                 select reportItem).OrderBy(n => n.CustomerName.Split(' ')[1]).ToList();
 
 
             foreach (var item in millionaireReport)
